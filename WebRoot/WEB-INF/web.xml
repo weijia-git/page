@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>page</display-name>
+  <servlet>
+    <servlet-name>QueryPageServlet</servlet-name>
+    <servlet-class>com.wj.servlet.QueryPageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelPersonServlet</servlet-name>
+    <servlet-class>com.wj.servlet.DelPersonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertPersonServlet</servlet-name>
+    <servlet-class>com.wj.servlet.InsertPersonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PreUpdatePersonServlet</servlet-name>
+    <servlet-class>com.wj.servlet.PreUpdatePersonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdatePersonServlet</servlet-name>
+    <servlet-class>com.wj.servlet.UpdatePersonServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>QueryPageServlet</servlet-name>
+    <url-pattern>/QueryPageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelPersonServlet</servlet-name>
+    <url-pattern>/DelPersonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertPersonServlet</servlet-name>
+    <url-pattern>/InsertPersonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PreUpdatePersonServlet</servlet-name>
+    <url-pattern>/PreUpdatePersonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePersonServlet</servlet-name>
+    <url-pattern>/UpdatePersonServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
